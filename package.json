@@ -9,8 +9,16 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "express": "^4.21.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abelcam29/TC2005BHTML.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Abelcam29/TC2005BHTML/issues"
+  },
+  "homepage": "https://github.com/Abelcam29/TC2005BHTML#readme",
+  "description": ""
 }
