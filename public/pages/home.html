@@ -18,6 +18,16 @@
         </nav>
         <img src="../images/perros.jpg" id="perros"/>
         <h2>Victor Abel Camacho Rodriguez</h2>
+        <form id="home-form" class ="home-form" action="">
+            <input type="submit" value="Alert">
+        </form>
+        <script>
+            const homeForm = document.getElementById('home-form');
+            homeForm.addEventListener('submit', function(event) {
+                event.preventDefault(); // Evita que el formulario se envíe automáticamente
+                alert('Hola, soy Victor Abel Camacho Rodriguez');
+            });
+        </script>
         Hola
         <footer>Tengo hambre</footer>
     </body>
