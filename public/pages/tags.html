@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta chraset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../styles/style.css">
+        <title>tags</title>
+    </head>
+
+    <body>
+       
+
+        <header><h1>Pagina de tags</h1></header>
+        <nav class="navbar">
+            <a href="../index.html">Index</a>
+            <a href="home.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="profile.html">profile</a>
+            <a href="tags.html">tags</a>
+        </nav>
+        <img src="../images/gatos.jpeg" id="gatos">
+        <p>Hola, estoy <b>aqui</b></p>
+        <strong>Esta es una pagina web</strong>
+        <h6>Este es el limite de header</h6>
+        <h5 id="titulo">Titulo</h5>
+        <button id="cambiarTexto">Cambiar texto</button>
+        <div id="caja" style="width: 200px; height: 200px; background-color: lightblue;"></div>
+        <script>
+            const caja = document.getElementById('caja');
+            caja.addEventListener('mouseover', function() {
+                caja.style.backgroundColor = 'lightgreen';
+            });
+            caja.addEventListener('mouseout', function() {
+                caja.style.backgroundColor = 'lightblue';
+            });
+        </script>
+        <script>
+            const boton = document.getElementById('cambiarTexto');
+            boton.addEventListener('click', function() {
+                document.getElementById('titulo').textContent = '¡El texto ha cambiado!';
+            });
+        </script>
+        <h1>este es el header mas grande</h1>
+        <sup>si</sup>
+        <sub>no</sub>
+        <br><br><br>
+        <p>Aqui son <b>3</b> saltos de linea</p>
+    </body>
+</html>
