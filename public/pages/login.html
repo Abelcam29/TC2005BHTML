@@ -10,11 +10,7 @@
     <body>
         <header><h1>Pagina de Login</h1></header>
         <nav class="navbar">
-            <a href="../index.html">Index</a>
-            <a href="home.html">Home</a>
-            <a href="login.html">Login</a>
-            <a href="profile.html">profile</a>
-            <a href="tags.html">tags</a>
+
         </nav>
         <header><h1>Mi primera pagina web</h1></header>
         <form id="loginForm" class="login-form">
@@ -22,36 +18,9 @@
             <input type="text" id="username" name="username" required><br><br>
             <label for="password">Contraseña: </label>
             <input type="password" id="password" name="password" required><br><br>
-            <input type="submit" value="Enviar">
+            <input type="submit" value="Enviar" id="boton">
         </form>
-
-        <script>
-            // Selecciona el formulario
-            const loginForm = document.getElementById('loginForm');
-
-            // Agrega un evento submit al formulario
-            loginForm.addEventListener('submit', function(event) {
-                event.preventDefault(); // Evita que el formulario se envíe automáticamente
-
-                // Obtén los valores de los campos
-                const username = document.getElementById('username').value;
-                const password = document.getElementById('password').value;
-
-                // Valida los datos (puedes personalizar esta validación)
-                if (username === '' || password === '') {
-                    alert('Por favor, completa todos los campos.');
-                } else if(username === 'admin' && password === '1234') {
-                    // Aquí puedes manejar el envío de datos, por ejemplo, enviarlos a un servidor
-                    console.log('Usuario:', username);
-                    console.log('Contraseña:', password);
-
-                    // Redirige a la página de "home"
-                    window.location.href = 'home.html';
-                }
-                else {
-                    alert('Usuario o contraseña incorrectos.');
-                }
-            });
-        </script>
+    <script src="../scripts/login.js"></script>
+    <script src="../scripts/user-session.js"></script>
     </body>
 </html>
